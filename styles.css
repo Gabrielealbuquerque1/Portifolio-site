@@ -1,0 +1,297 @@
+#inicio, .hab-box, .hab-header{
+    visibility: hidden;
+}
+
+.white-box {
+    background-color: white;
+    color:black;
+}
+
+.grey-box {
+    background-color: lightgray;
+    color:black;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-fluid {
+    padding: 10% 15%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    line-height: 2;
+}
+
+/* Navbar */
+#navbar .container-fluid {
+    padding: 0.8% 15%;
+}
+
+.navbar-brand {
+    width: 200px;
+}
+
+.logo {
+    width: 35%;
+}
+
+.nav-link {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 10px;
+    color:white;
+}
+
+.nav-link:hover, .active:hover {
+    color:lightgray;    
+}
+
+/* Title section */
+#inicio, #habilidades, #projetos, #contato{    
+    padding-top: 5%;
+}
+
+.inicio-img{
+    text-align: left;
+    width: 50%;
+}
+
+.boas-vindas {
+    font-size: 2rem;
+    line-height: 2;
+    text-align: left;
+}
+
+.boas-vindas:after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.inicio-p {
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.linkedin-button{
+    margin-top: 3rem;
+    width: 90%;
+    height: 4rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    background-color: white;
+    color: black;
+    border: 0;
+    border-radius: 5px;
+    transition: 0.4s all;
+	cursor: pointer;
+}
+
+.linkedin-button i {
+    margin-right: 5px;
+}
+
+.linkedin-button:hover {
+    color: white;
+    background-color: black;
+}
+
+/* Habilidades */
+#habilidades {
+    text-align: center;
+}
+
+.hab-box {
+    margin-top: 4rem;
+    padding: 30px;
+}
+
+.hab-icon {
+    display: block;
+    margin: 30px;
+    font-size: 4rem;
+}
+
+.hab-icon:hover {
+    cursor: pointer;
+}
+
+.hab-desc {
+    text-align: left;
+}
+
+.mobile-text {
+    display: none;
+}
+
+/* Projetos */
+
+.pro-header, .cont-header {
+    text-align: center;
+}
+
+.project-content {
+    margin-top: 4rem;
+}
+
+.website-image {
+    margin: 0 50px;
+    float: left;
+    width: 6%;
+}
+
+.construction-image {
+    margin: 0 50px;
+    float: right;
+    width: 8%;
+}
+
+.project-title {
+    color: gray;
+}
+
+.construction-title {
+    color: gray;
+    text-align: right;
+}
+
+.project-desc {
+    text-align: left;
+    line-height: 2.5;
+}
+
+.project-links {
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-links:hover {
+    color: gray;
+}
+
+.construction-desc {
+    text-align: right;
+    line-height: 2.5;
+}
+
+/* Contatos */
+#contato {
+    text-align: center;
+}
+
+.cont-icons {
+    font-size: 4rem;
+    margin: 100px;
+    color: white;
+}
+
+.cont-icons:hover {
+    color: gray;
+}
+
+/* Footer */
+footer .container-fluid {
+    padding: 5% 15%;
+}
+
+@media screen and (max-width:1000px) {
+    
+    /* Navbar */
+    
+    .navbar-brand {
+        width: 20%;
+    }
+    
+    .logo {
+        width: 70%;
+    }
+    
+    /*Inicio*/
+    
+    #inicio {
+        text-align: center;
+    }
+    
+    .inicio-img {
+        margin: 80px;
+    }
+    
+    .boas-vindas {
+        text-align: center;
+    }
+    
+    .inicio-p {
+        line-height: 2.5;
+    }
+
+    /*Habilidades*/
+    
+    .hab-box {
+        margin-top: 1rem;
+    }
+
+    .desktop-text {
+        display: none;
+    }
+
+    .mobile-text {
+        display: inline-block;
+    }
+
+    .hab-icon {
+        display: inline-block;
+        font-size: 3rem;
+        margin: 20px;
+    }
+
+    /*Projetos*/
+
+    .website-image, .construction-image {
+        width: 20%;
+        float: none;
+        margin: 30px;
+    }
+    .project-content, .construction-title {
+        text-align: center;
+        margin: 0;
+    }
+    .project-desc, .construction-desc {
+        text-align: left;
+    }
+
+    /*Contatos*/
+    
+    .cont-icons {
+        margin: 50px;
+        font-size: 2rem;
+        display: inline-block;  
+    }
+    
+}
